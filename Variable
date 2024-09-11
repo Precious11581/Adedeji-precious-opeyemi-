@@ -1,0 +1,42 @@
+def troubleshoot_computer():
+    print("Computer Troubleshooting Program")
+    print("Answer the following questions to help diagnose the issue.\n")
+
+    # Step 1: Power Issue
+    power_issue = input("Is the computer powering on? (yes/no): ").strip().lower()
+    if power_issue == "no":
+        print("1. Check if the power cable is properly plugged in.")
+        print("2. Ensure the power outlet is functional.")
+        print("3. Try pressing the power button for a longer time.")
+        return 
+    
+    # Step 2: Display Issue
+    display_issue = input("Is there a display on the monitor? (yes/no): ").strip().lower()
+    if display_issue == "no":
+        print("1. Check if the monitor is turned on.")
+        print("2. Make sure the video cable (HDMI/DisplayPort) is properly connected.")
+        print("3. Try restarting the computer.")
+        return
+    
+    # Step 3: Operating System Boot
+    os_boot = input("Is the operating system booting properly? (yes/no): ").strip().lower()
+    if os_boot == "no":
+        print("1. Try booting into safe mode.")
+        print("2. Check if there are any error messages on the screen.")
+        print("3. You might need to repair or reinstall the OS.")
+        return
+    
+    # Step 4: Internet Connectivity
+    internet_issue = input("Are you able to connect to the internet? (yes/no): ").strip().lower()
+    if internet_issue == "no":
+        print("1. Check if the network cable is connected (for wired connections).")
+        print("2. Restart your router or modem.")
+        print("3. Make sure Wi-Fi is turned on (for wireless connections).")
+        return
+
+    # If all checks are okay
+    print("It seems like your computer is functioning correctly.")
+    print("If you're still experiencing issues, consider consulting a professional.")
+
+# Run the troubleshooting program
+troubleshoot_computer()
